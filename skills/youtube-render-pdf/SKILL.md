@@ -219,13 +219,16 @@ When a visualization is generated externally rather than drawn natively in LaTeX
 - prefer vector output for plots, charts, and schematic illustrations
 - avoid `png` or `jpg` for script-generated teaching figures unless the content is inherently raster
 
+When the source material contains relationships, results, or equations that would be clearer when redrawn than when shown as a screenshot, prefer rebuilding them with LaTeX-native tools or with `matplotlib` / `seaborn`.
+
 Use visualizations for:
 
-- process flows
-- architecture layouts
-- scaling-law plots
-- summary diagrams
-- comparisons that are clearer as charts than prose
+- process flows, pipelines, and architecture overviews
+- curves and charts such as scaling laws, training curves, benchmark results, and ablation comparisons
+- distributions, correlations, heatmaps, and other plots that explain data relationships
+- complex functions, surfaces, contour plots, and geometric intuition figures
+- tables or comparisons that become clearer when redrawn as charts
+- summary diagrams that compress a section's core mechanism or takeaway into one figure
 
 Do not add decorative graphics that do not teach anything.
 
